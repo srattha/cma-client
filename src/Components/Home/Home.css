@@ -1,0 +1,49 @@
+.box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 85%;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.box-text h1 {
+    letter-spacing: -2px;
+    font: 90px / 1.1em opensans-bold, sans-serif;
+    margin: 0px auto 18px;
+}
+
+.box-text h3 {
+    width: 70%;
+    font: 18px / 1.9em librebaskerville-regular, serif;
+    margin: 0px auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 200vh;
+    background-color: rgb(110, 110, 110);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin: 0 1rem;
+    color: #fff;
+}

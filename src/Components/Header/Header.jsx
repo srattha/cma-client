@@ -1,52 +1,48 @@
-import * as React from "react";
-import ParticlesBg from "particles-bg";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 import "./Header.css";
-
-const fadeDuration = 10;
 function Header() {
+  const [navSize, setnavSize] = useState("10rem");
+  const [navColor, setnavColor] = useState("transparent");
+  const listenScrollEvent = () => {
+    window.scrollY > 10 ? setnavColor("#fff") : setnavColor("transparent");
+    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
   return (
-    <header id="home">
-      <ParticlesBg type="circle" bg={true} />
-      <nav id="nav-wrap">
-        <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-          Show navigation
-        </a>
-        <a className="mobile-btn" href="#home" title="Hide navigation">
-          Hide navigation
-        </a>
-
-        <ul id="nav" className="nav">
-          <li className="current">
-            <a className="smoothscroll" href="#home">
+    <header className="nav">
+      <nav
+        className="nav__container__actions"
+        style={{
+          backgroundColor: navColor,
+          height: navSize,
+          transition: "all 1s",
+        }}
+      >
+        <ul>
+          <li>
+            <Link activeClass="active" smooth spy to="home">
               หน้าแรก
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="smoothscroll" href="#encourage">
+            <Link activeClass="active" smooth spy to="encourage">
               ข้อพระคัมภีร์หนุนใจ
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="smoothscroll" href="#activity">
+            <Link activeClass="active" smooth spy to="blog">
               กิจกรรม
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
-
-      <div className="row banner">
-        <div className="banner-text">
-          <h1 className="responsive-headline">CMA ยินดีต้อนรับทุกท่าน</h1>
-
-          <h3>
-            คำทักทาย สวัสดีครับ ธรรมิกชน ของพระเจ้าทุกท่าน ขอให้พระคุณ
-            และความเข้าใจ ในน้ำพระทัยของพระองค์ ผ่านความรู้การสำแดง
-            จากพระคำของพระองค์ทำให้ท่านเติบโต สู่ความไพบูลย์ในองค์พระเยซูคริสต์
-            <p>อฟ.4 : 11-13</p>
-          </h3>
-        </div>
-      </div>
     </header>
   );
 }
