@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import ParticlesBg from "particles-bg";
+import Encourage from "./Components/Encourage/Encourage";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -14,7 +15,9 @@ function App() {
       <section id="home">
         <Home />
       </section>
-      <section id="encourage">ข้อพระคัมภีร์หนุนใจ</section>
+      <section id="encourage">
+        <Encourage />
+      </section>
       <section id="blog">กิจกรรม</section>
     </div>
   );

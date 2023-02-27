@@ -1,0 +1,30 @@
+.separator {
+    background-color: rgb(48, 48, 48);
+    height: 2px;
+    position: relative;
+    width: 22px;
+    display: block;
+    margin: 10px auto 20px;
+}
+
+.slick-prev {
+    left: 3% !important;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 3% !important;
+    z-index: 1;
+
+}
+
+.slick-prev:before,
+.slick-next:before {
+
+    color: #3b3b3c !important;
+
+}
+
+.pd-top-150 {
+    padding-top: 150px;
+}
