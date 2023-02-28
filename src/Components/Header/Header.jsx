@@ -3,11 +3,11 @@ import { Link } from "react-scroll";
 
 import "./Header.css";
 function Header() {
-  const [navSize, setnavSize] = useState("10rem");
+  const [navSize, setnavSize] = useState("5rem");
   const [navColor, setnavColor] = useState("transparent");
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#fff") : setnavColor("transparent");
-    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
+    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("5rem");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -37,8 +37,13 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link activeClass="active" smooth spy to="blog">
+            <Link activeClass="active" smooth spy to="activity">
               กิจกรรม
+            </Link>
+          </li>
+          <li>
+            <Link activeClass="active" smooth spy to="contact">
+              ติดต่อ
             </Link>
           </li>
         </ul>

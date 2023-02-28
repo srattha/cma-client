@@ -3,7 +3,7 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div className="row box">
+    <div className=" box">
       <div className="box-text">
         <h1 className="responsive-headline">CMA ยินดีต้อนรับทุกท่าน</h1>
         <h3>

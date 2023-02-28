@@ -18,7 +18,7 @@ class Encourage extends Component {
         <h3 className="text-center">ข้อพระคัมภีร์หนุนใจ</h3>
         <div className="separator center"></div>
         <Slider {...settings} className="text-center">
-          <div>
+          <div className="pd-50">
             <h5>
               แม้ข้าพระองค์จะเดินไปตามหุบเขาเงามัจจุราช
               ข้าพระองค์ไม่กลัวอันตรายใดๆ เพราะพระองค์ทรงสถิตกับข้าพระองค์
@@ -33,7 +33,7 @@ class Encourage extends Component {
             </h5>
             <h5>สดุดี - 23:4-6</h5>
           </div>
-          <div>
+          <div className="pd-50">
             <h5>
               แต่ท่านถูกบาดเจ็บเพราะความทรยศของเราทั้งหลาย
               ท่านฟกช้ำเพราะความบาปผิดของเรา

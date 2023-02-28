@@ -1,3 +1,19 @@
 #encourage {
-    display: block !important;
+    height: 100vh;
+}
+
+#activity {
+    height: 100vh;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center
+}
+
+#contact {
+    height: 100vh;
+    display: flex;
+    align-items: center
 }

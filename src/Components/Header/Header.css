@@ -11,9 +11,9 @@ section {
     font-weight: bold;
 }
 
-#home {
+/* #home {
     margin-top: -80px;
-}
+} */
 
 #encourage,
 #contact {
@@ -21,7 +21,7 @@ section {
     background: #eaf2fa;
 }
 
-.nav {
+/* .nav {
     display: flex;
     align-items: center;
     position: -webkit-sticky;
@@ -53,11 +53,11 @@ section {
 
     flex: 1;
     justify-content: center;
-}
+} */
 
 .active {
     font-weight: bold;
-    color: rgb(128, 0, 0);
+    color: #b70004;
 }
 
 ul {
