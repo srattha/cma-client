@@ -23,6 +23,7 @@ function Header() {
           backgroundColor: navColor,
           height: navSize,
           transition: "all 1s",
+          zIndex: 1,
         }}
       >
         <ul>

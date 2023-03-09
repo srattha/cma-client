@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'cma-fonts';
+    src: url('./assets/FONTS/ThaiSansNeue-Light.ttf') format('truetype');
+}
+
 #encourage {
     height: 100vh;
 }
@@ -9,7 +14,13 @@
 #home {
     height: 100vh;
     display: flex;
-    align-items: center
+    align-items: center;
+
+    background: url(./assets/images/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #contact {

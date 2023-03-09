@@ -1,9 +1,21 @@
 import React, { Component } from "react";
 import "./Activity.css";
 import Zmage from "react-zmage";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 class Activity extends Component {
   render() {
     const img = "/public/images/logo.png";
+    const images = [
+      {
+        original: "/public/images/logo.png",
+        thumbnail: "/public/images/logo.png",
+      },
+      {
+        original: "/public/images/logo.png",
+        thumbnail: "/public/images/logo.png",
+      },
+    ];
     return (
       <div className="pd-top-150">
         <div>
@@ -25,42 +37,8 @@ class Activity extends Component {
               </div>
             </div>
             <div style={{ width: "50%" }}>
-              <h4>รูป กิจกรรมคริสตจักร</h4>
-
-              <div className="twelve columns collapsed">
-                <div className="bgrid-quarters s-bgrid-thirds cf">
-                  <div className="columns ">
-                    <div className="item-wrap">
-                      <Zmage alt="" src={img} />
-                    </div>
-                  </div>
-                  <div className="columns ">
-                    <div className="item-wrap">
-                      <Zmage alt="" src={img} />
-                    </div>
-                  </div>
-                  <div className="columns ">
-                    <div className="item-wrap">
-                      <Zmage alt="" src={img} />
-                    </div>
-                  </div>
-                  <div className="columns ">
-                    <div className="item-wrap">
-                      <Zmage alt="" src={img} />
-                    </div>
-                  </div>
-                  <div className="columns ">
-                    <div className="item-wrap">
-                      <Zmage alt="" src={img} />
-                    </div>
-                  </div>
-                  <div className="columns ">
-                    <div className="item-wrap">
-                      <Zmage alt="" src={img} />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h4 className="mg-b-30">รูป กิจกรรมคริสตจักร</h4>
+              <ImageGallery items={images} />
             </div>
           </div>
         </div>

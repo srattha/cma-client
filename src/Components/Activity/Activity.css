@@ -80,6 +80,12 @@
     float: right;
 }
 
-.item-wrap img {
-    width: 30%;
+
+.image-gallery-slide .image-gallery-image {
+    height: 400px;
+
+}
+
+.mg-b-30 {
+    margin-bottom: 30px;
 }
