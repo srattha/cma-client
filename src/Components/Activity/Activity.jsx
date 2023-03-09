@@ -8,12 +8,12 @@ class Activity extends Component {
     const img = "/public/images/logo.png";
     const images = [
       {
-        original: "/public/images/logo.png",
-        thumbnail: "/public/images/logo.png",
+        original: "/src/assets/images/bg.jpg",
+        thumbnail: "/src/assets/images/bg.jpg",
       },
       {
-        original: "/public/images/logo.png",
-        thumbnail: "/public/images/logo.png",
+        original: "/src/assets/images/bg.jpg",
+        thumbnail: "/src/assets/images/bg.jpg",
       },
     ];
     return (
