@@ -9,7 +9,7 @@ import Encourage from "./Components/Encourage/Encourage";
 import Contact from "./Components/Contact/Contact";
 
 import io from "socket.io-client";
-const socket = io("http://localhost:3000");
+const socket = io("https://cma-api.vercel.app");
 
 function App() {
   const [count, setCount] = useState(0);
